@@ -5,4 +5,9 @@ const newRequest = axios.create({
     withCredentials: true,
 })
 
+// const newRequest = axios.create({
+//     baseURL: "http://localhost:9900/api/",
+//     withCredentials: true,
+// })
+
 export default newRequest
