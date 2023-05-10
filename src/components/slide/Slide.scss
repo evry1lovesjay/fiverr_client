@@ -4,16 +4,12 @@
     padding: 100px 0px;
     align-items: center;
     position: relative;
-    border: 3px solid red;
 
       .slide-container {
         display: flex;
         position: relative;
-        border: 3px solid green;
         overflow: hidden;
       }
-
-      
           
       button {
         position: absolute;
