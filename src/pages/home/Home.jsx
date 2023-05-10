@@ -7,15 +7,28 @@ import "./Home.scss";
 import ProjectCard from "../../components/projectCard/projectCard";
 
 const Home = () => {
+
+    // const imageLength = cards.length
+
     return ( 
     <div className="home">
         <Featured/>
         <TrustedBy/>
-        <Slide  slidesToShow={5} arrowsScroll={4}>
+        <Slide numToShow={4}>
+                {cards.map((card) => (
+                    <CatCard key={card.id} item={card} />
+                ))}
+        </Slide>
+        {/* <Slide  slidesToShow={5} arrowsScroll={4} imageLength={imageLength}>
             {cards.map((card) => (
                 <CatCard key={card.id} item={card} />
                 ))}
-        </Slide>
+        </Slide> */}
+        {/* <Slide  slidesToShow={5} arrowsScroll={4}>
+            {cards.map((card) => (
+                <CatCard key={card.id} item={card} />
+                ))}
+        </Slide> */}
 
         <div className="features">
             <div className="container">
@@ -174,7 +187,13 @@ const Home = () => {
             </div>
         </div>
 
-        <Slide  slidesToShow={4} arrowsScroll={3}>
+        {/* <Slide  slidesToShow={4} arrowsScroll={3} numToShow={5}>
+            {projects.map((card) => (
+                <ProjectCard key={card.id} item={card} />
+                ))}
+        </Slide> */}
+
+        <Slide  numToShow={4}>
             {projects.map((card) => (
                 <ProjectCard key={card.id} item={card} />
                 ))}

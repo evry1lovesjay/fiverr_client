@@ -2,29 +2,187 @@
     display: flex;
     justify-content: center;
     padding: 100px 0px;
-    
-    .container {
-      width: 1400px;
-      position: relative;
+    align-items: center;
+    position: relative;
+    border: 3px solid red;
+
+      .slide-container {
+        display: flex;
+        position: relative;
+        border: 3px solid green;
+        overflow: hidden;
+      }
+
+      
+          
+      button {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        transform: translateY(-50%);
+        background-color: rgb(243, 243, 243);
+        border-radius: 50%;
+        border: none;
+        color: green;
+        font-size: 2rem;
+        cursor: pointer;
+        
+        &:first-of-type {
+          left: 0;
+        }
+        
+        &:last-of-type {
+          right: 0;
+        }
+      }
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
     }
-  
-    .carousel-initialized {
-      position: static;
-    }
-  
-    .carousel-prev,
-    .carousel-next {
-      width: 50px;
-      height: 50px;
-      background-color: rgb(243, 243, 243);
-      border-radius: 50%;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-    }
-  
-    .carousel-prev {
-      left: -25px;
+    100% {
+      opacity: 1;
     }
   }
+
+// .slide {
+//     display: flex;
+//     justify-content: center;
+//     padding: 100px 0px;
+    
+//     .container {
+//       width: 1400px;
+//       position: relative;
+//     }
+  
+//     .carousel-initialized {
+//       position: static;
+//     }
+//   
+  
+//     .carousel-prev,
+//     .carousel-next {
+//       width: 50px;
+//       height: 50px;
+//       background-color: rgb(243, 243, 243);
+//       border-radius: 50%;
+//       position: absolute;
+//       top: 0;
+//       bottom: 0;
+//       margin: auto;
+//     }
+  
+//     .carousel-prev {
+//       left: -25px;
+//     }
+//   }
+
+
+// .slide {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     position: relative;
+//     margin: 0 auto;
+      
+//       .container {
+//         display: flex;
+//         justify-content: center;
+//         overflow: hidden;
+//         position: relative;
+//       }
+      
+//       //   img {
+//       //   // width: calc(100% / var(--num-to-show));
+//       //   // width: 50%;
+//       //   flex-shrink: 0;
+//       //   transition: transform 1s ease-in-out;
+//       // }
+    
+      
+//       button {
+//         position: absolute;
+//         width: 50px;
+//         height: 50px;
+//         top: 0;
+//         bottom: 0;
+//         margin: auto;
+//         transform: translateY(-50%);
+//         background-color: rgb(243, 243, 243);
+//         border-radius: 50%;
+//         border: none;
+//         color: green;
+//         font-size: 2rem;
+//         cursor: pointer;
+        
+//         &:first-of-type {
+//           left: 0;
+//         }
+        
+//         &:last-of-type {
+//           right: 0;
+//         }
+//       }
+// }
+
+
+
+
+
+
+
+// .slider-container {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   position: relative;
+//   margin: 0 auto;
+//   width: 80%;
+//   padding: 100px 0px;
+//   transition: transform 1s ease-in-out;
+//   // max-width: 1200px;
+
+//   .sub-container {
+//     display: flex;
+//     justify-content: center;
+//     overflow: hidden;
+//     width: 1400px;
+//     transition: transform 1s ease-in-out;
+      
+//         img {
+//         // width: calc(100% / var(--num-to-show));
+//         width: 100%;
+//         flex-shrink: 0;
+//         transition: transform 1s ease-in-out;
+//       }
+    
+//   }
+
+//     button {
+//       position: absolute;
+//       width: 50px;
+//       height: 50px;
+//       top: 0;
+//       bottom: 0;
+//       margin: auto;
+//       transform: translateY(-50%);
+//       background-color: rgb(243, 243, 243);
+//       border-radius: 50%;
+//       border: none;
+//       color: green;
+//       font-size: 2rem;
+//       cursor: pointer;
+      
+//       &:first-of-type {
+//         left: 0;
+//       }
+      
+//       &:last-of-type {
+//         right: 0;
+//       }
+//     }
+// }

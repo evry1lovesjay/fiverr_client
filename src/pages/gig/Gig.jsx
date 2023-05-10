@@ -1,9 +1,11 @@
 import { useQuery } from "@tanstack/react-query";
 import newRequest from "../../utils/newRequest";
 import "./Gig.scss";
-import { Slider } from 'infinite-react-carousel';
+// import { Slider } from 'infinite-react-carousel';
 import { Link, useParams } from "react-router-dom";
 import Reviews from "../../components/reviews/Reviews";
+import Slide from "../../components/slide/Slide";
+
 
 const Gig = () => {
     
@@ -56,11 +58,11 @@ return (
                     </div>)}
                 </div>}
 
-                {data.images && <Slider slidesToShow={1} arrowsScroll={1} className="slider">
+                {data.images && <Slide numToShow={1} className="slider" >
                     {data?.images.map((img) => (
                     <img key={img} src={img} alt="" />
                     ))}
-                </Slider> }
+                </Slide> }
 
                 <h2>About This Gig</h2>
                 <p>
