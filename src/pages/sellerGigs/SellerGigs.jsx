@@ -21,9 +21,6 @@ const SellerGigs = () => {
         }
     )
 
-    console.log(data)
-
-
     const mutation = useMutation({
         mutationFn: (id) => newRequest.delete(`/gigs/${id}`),
         onSuccess:()=>{
